@@ -57,10 +57,6 @@ li {
 	/*****************************
 	******** nzango menu *********
 	******************************/
-	header nav#nav-nzango {
-		margin-bottom: 2vw;
-	}
-
 	header nav#nav-nzango li a,
 	header nav#nav-menu li a {
 		align-items: center;
@@ -68,6 +64,8 @@ li {
 	}	
 
 	header nav#nav-nzango li a:link {
+		font-size: 120%;
+		font-weight: 900;
 		height: 6vw;
 		line-height: 6vw;
 	}
@@ -103,10 +101,6 @@ li {
 		width: 18vw;
 	}
 
-	header nav#nav-nzango li h1 {
-		padding: 0.3vw 0 0 0;
-	}
-
 	/*****************************
 	********* pages menu *********
 	******************************/
@@ -125,13 +119,11 @@ li {
 	}
 
 	header nav#nav-menu li a:hover {
-		background-color: #000;
-		color: #fff;
+		color: #CE5A35;
 	}
 
 	header nav#nav-menu li a:active {
-		background-color: #000;
-		color: #fff;
+		color: #CE5A35;
 	}
 
 	/*****************************
@@ -141,7 +133,6 @@ li {
 	/* banner and player container div */
 	header div {
 		display: flex;
-		margin-top: 2vw;
 	}
 	
 	/* banner section */
