@@ -1,15 +1,17 @@
-/*
-= fontes =
+/**************************
+**** CSS DESIGN RULES ****
+**************************
+= Fonts =
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 
-= cores = 
+= Colors = 
 AZUL NZANGO: rgb(135, 194, 220) | #87C2DC;
 VERMELHO NZANGO:  rgb(206, 90, 53) | #CE5A35;
 
-= medidas =
-fonte-size padrão =  1.2vw
-<h1> = 
+= Measures =
+Standard Font Size =  1.2vw
+<h1> = Logotype
 <h2> = 
 <h3> = 
 <h4> = 
@@ -20,6 +22,9 @@ fonte-size padrão =  1.2vw
 
 */
 
+/**************************
+***** CSS RESET *****
+**************************/
 * {
 	border: none;
 	box-sizing: border-box;
@@ -45,305 +50,403 @@ li {
 	list-style: none;
 }
 
-h1,
-h2,
-h3 {
-	text-transform: uppercase;
-}
+/**************************
+********** HEADER *********
+**************************/
+	
+	/*****************************
+	******** nzango menu *********
+	******************************/
+	header nav#nav-nzango {
+		margin-bottom: 2vw;
+	}
 
-h1 {
-	padding: 0.3vw 0 0 0;
-}
+	header nav#nav-nzango li a,
+	header nav#nav-menu li a {
+		align-items: center;
+		display: block;
+	}	
 
-h3 {
-	background-color: #000;
-	color: #fff;
-	font-size: 144%;
-	margin: 3vw 0 1vw 0;
-	text-align: left;
-}
+	header nav#nav-nzango li a:link {
+		height: 6vw;
+		line-height: 6vw;
+	}
+
+	header nav#nav-nzango li:nth-child(1) a:link {
+		background-color: #87C2DC;
+		color: #000;
+	}
+
+	header nav#nav-nzango li:nth-child(3) a:link {
+		background-color: #CE5A35;
+		color: #fff;
+	}
+
+	header nav#nav-nzango li a:visited {
+		
+	}
+
+	header nav#nav-nzango li a:hover {
+
+	}
+
+	header nav#nav-nzango li a:active {
+
+	}
+
+	header nav#nav-nzango li:nth-child(1) a,
+	header nav#nav-nzango li:nth-child(3) a {
+		width: 35.8vw;
+	}
+		
+	header nav#nav-nzango li:nth-child(2) a {
+		width: 18vw;
+	}
+
+	header nav#nav-nzango li h1 {
+		padding: 0.3vw 0 0 0;
+	}
+
+	/*****************************
+	********* pages menu *********
+	******************************/
+	header nav#nav-menu li a {
+		width: 11.25vw;
+		height: 4vw;
+		line-height: 4vw;
+	}
+
+	header nav#nav-menu li a:link {
+		background-color: none;
+	}
+
+	header nav#nav-menu li a:visited {
+		background-color: none;
+	}
+
+	header nav#nav-menu li a:hover {
+		background-color: #000;
+		color: #fff;
+	}
+
+	header nav#nav-menu li a:active {
+		background-color: #000;
+		color: #fff;
+	}
+
+	/*****************************
+	*********** banner ***********
+	******************************/
+	
+	/* banner and player container div */
+	header div {
+		display: flex;
+		margin-top: 2vw;
+	}
+	
+	/* banner section */
+	header div section {	
+		height: 24.5vw;
+		overflow: hidden;
+		position: relative;
+		width: 70%;
+	}
+
+	/* player section */
+	header div section#spotify-player {	
+		background-color: rgb(111,122,122);
+		margin-left: 2vw;
+		width: 30%;
+	}
+
+	/* inner pages banner section */
+	header div section.inner-page-banner {	
+		height: 15vw;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+	/* banner section elements positioning */
+	header div section a,
+	header div section h2,
+	header div section h3,
+	header div section img,
+	header div section nav {
+		position:absolute;
+	}
+
+	/* banner section texts */
+	header div section a,
+	header div section h2,
+	header div section h3,
+	header div section nav {
+		background-color: rgba(0, 0, 0, .6);
+		color: #fff;
+		padding: 1vw;
+		margin: 1vw;
+	}
+
+	/* banner section button */
+	header div section a {
+		background-color: #CE5A35;
+		font-size: 100%;
+		margin-top: 15vw;
+	}
+	
+	/* banner section title */
+	header div section h2 {
+		font-size: 288%;
+		margin-top: 1vw;
+		max-width: 50%;
+	}
+
+	/* banner section subtitle */
+	header div section h3 {
+		font-size: 144%;
+		margin-top: 8vw;
+		max-width: 50%;
+	}
+
+	/* banner section image */
+	header div section img {
+		height: auto;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	/* banner section navigation container */
+	header div section nav {
+		background: none;
+		height: 4vw;
+		margin: 19.6vw 0 0 1vw;
+		padding: 0;
+		width: 9vw;
+	}
+
+	header div section nav li {
+		display: inline;
+		margin: 0;
+	}
+
+	/* banner section navigation buttons */
+	header div section nav li a {
+		font-size: 2vw;
+		font-weight: 900;
+		line-height: 2vw;
+		background-color: #87C2DC;
+		color: #fff;
+		display: block;
+		height: 4vw;
+		margin: 0 0 0 9.2vw;
+		text-align: center;
+		width: 4vw;
+	}
+
+	header div section nav li a:nth-child(2) {
+		margin-left: 14.2vw;
+	}
+	
+	
+	
+	/***********/
+
+	
+
+	h3 {
+		background-color: #000;
+		color: #fff;
+		font-size: 144%;
+		margin: 3vw 0 1vw 0;
+		text-align: left;
+	}
 
 nav {
 	align-items: start;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-between;
-	gap: 0 0 .5vw 0;
+	gap: 2vw 0;
 }
 
-nav li a {
-	font-size: 90%;
-	text-align: center;
+	nav li a {
+		font-size: 90%;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	nav li a img {
+		max-width: 100%;
+	}
+
+article {
+	margin: 4vw 0;
 }
 
-nav li a img {
-	max-width: 100%;
-}
+	article.content {
+		background-color:rgba(135, 194, 220, .2);
+		padding: 2vw;
+	}
 
-#nav-nzango li a,
-#nav-menu li a {
-	align-items: center;
-	display: block;
-}	
-
-#nav-nzango li a:link {
-	height: 6vw;
-	line-height: 6vw;
-}
-
-#nav-nzango li:nth-child(1) a:link {
-	background-color: #87C2DC;
-	color: #000;
-}
-
-#nav-nzango li:nth-child(3) a:link {
-	background-color: #CE5A35;
-	color: #fff;
-}
-
-#nav-nzango li a:visited {
+	article.gallery {
+		padding: 0;
+	}
 	
-}
+	article h3,
+	footer h3 {
+		background-color: rgba(0, 0, 0, .9);
+		color:#fff;
+		margin: 0;
+		padding: 2vw 27.33vw 2vw 2vw;
+		width: 100%;
+	}
 
-#nav-nzango li a:hover {
+	article h3 {
+	}
 
-}
+	article.gallery h3 {
+		width: 100%;
+	}
 
-#nav-nzango li a:active {
+	article nav {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: wrap;
+		gap: 2vw;
+		justify-content: space-between;
+		margin: 2vw 0 0 0;
+	}
 
-}
+	article nav li a {
+		background-color:#CE5A35;
+		background-size: cover;
+		background-position:top;
+		background-repeat: no-repeat;
+		display: block;
+		height: 28.6vw;
+		overflow: hidden;
+		position: relative;
+		width: 28.6vw;
+	}
 
-#nav-nzango li:nth-child(1) a,
-#nav-nzango li:nth-child(3) a {
-	width: 35.8vw;
-}
+	article#what-we-do nav li a {
+		width: 16.4vw;
+	}
+
+	article#the-team-behind {
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	main.home article nav li a {
+		height: 21vw;
+		width: 21vw;
+	}
 	
-#nav-nzango li:nth-child(2) a {
-	width: 18vw;
-}
+	article nav li a h4,
+	article nav li a h5,
+	article nav li a p {
+		background-color: rgba(255, 255, 255, .8);
+		color: #000;
+		padding: .5vw;
+		position: absolute;
+	}
 
-#nav-menu li a {
-	width: 11.25vw;
-	height: 4vw;
-	line-height: 4vw;
-}
+	article nav li a h4 {
+		font-size: 86%;
+		margin: 1vw;
+	}
 
-#nav-menu li a:link {
-	background-color: none;
-}
+	article nav li a h5 {
+		font-size: 82%;
+		font-weight: 400;
+		margin: 15.7vw 1vw 1vw 0;
+		text-align: center;
+		width: 100%;
+	}
 
-#nav-menu li a:visited {
-	background-color: none;
-}
+	article.inner-page nav li a h5 {
+		margin: 24vw 1vw 1vw 0;
+	}
 
-#nav-menu li a:hover {
-	background-color: #000;
-	color: #fff;
-}
+	article p {
+		column-count: 3;
+		column-gap: 4vw;
+		margin-top: 2vw;
+		text-align: justify;
+		hyphens: auto;
+	}
 
-#nav-menu li a:active {
-	background-color: #000;
-	color: #fff;
-}
+	article p picture {
+		
+	}
 
-#nav-functions {
-
-}
-
-#banner {	
-
-	height: 33vw;
-	overflow: hidden;
-	position: relative;
-}
-
-#banner img {
-	height: auto;
-	width: 100%;
-	max-width: 100%;
-}
-
-#banner img,
-#banner h3,
-#banner h4,
-#banner a {
-	position:absolute;
-}
-
-#banner h3,
-#banner h4,
-#banner a {
-	background-color: rgba(0, 0, 0, .5);
-	color: #fff;
-	padding: .5vw;
-	margin-left: 2vw;
-}
-
-#banner h3 {
-	font-size: 288%;
-	margin-top: 2vw;
-}
-
-#banner h4 {
-	font-size: 144%;
-	margin-top: 8vw;
-}
-
-#banner>a {
-	font-size: 100%;
-	margin-top: 12vw;
-}
-
-#banner nav {
-	margin-top: 25.5vw;
-}
-
-#banner nav li {
-	margin: 0;
-}
-
-#banner nav li a {
-	font-size: 500%;
-	line-height: 50%;
-	padding: 1.4vw 1.5vw;
-}
-
-#banner nav li a:nth-child(2) {
-	margin-left: 10vw;
-}
-
-#events nav,
-#projects nav,
-#the-team-behind nav,
-#what-we-do nav {
-	align-items: flex-start;
-	display: flex;
-	flex-flow: wrap;
-	gap: 1vw;
-	justify-content: flex-start;
-	margin: 0 0 .5vw 0;
-}
-
-section nav li,
-#projects nav li,
-#the-team-behind nav li,
-#what-we-do nav li {
-	
-}
-
-#events>a,
-#projects>a,
-#the-team-behind>a,
-#what-we-do>a {
-	border: 1px dashed red;
-}
-
-#events nav li a,
-#projects nav li a,
-#the-team-behind nav li a,
-#what-we-do nav li a {
-	background-color:#CE5A35;
-	background-size: cover;
-	background-position:top;
-	background-repeat: no-repeat;
-	display: block;
-	height: 21.5vw;
-	overflow: hidden;
-	position: relative;
-	width: 21.5vw;
-}
-
-#the-team-behind nav li a {
-	filter: grayscale(100%);
-}
-
-#events nav li a h4,
-#events nav li a h5,
-#events nav li a p,
-#projects nav li a h4,
-#projects nav li a h5,
-#projects nav li a p,
-#the-team-behind nav li a h4,
-#the-team-behind nav li a h5,
-#the-team-behind nav li a p,
-#what-we-do nav li a h4,
-#what-we-do nav li a h5,
-#what-we-do nav li a p {
-	background-color: rgba(255, 255, 255, .7);
-	color: #000;
-	padding: .5vw;
-	position: absolute;
-}
-
-#events nav li a h4,
-#projects nav li a h4,
-#the-team-behind nav li a h4,
-#what-we-do nav li a h4 {
-	font-size: 86%;
-	margin: 1vw;
-}
-
-#events nav li a h5,
-#projects nav li a h5,
-#the-team-behind nav li a h5,
-#what-we-do nav li a h5 {
-	background-color: rgba(0, 0, 0, .6);
-	color: #fff;
-	font-size: 82%;
-	font-weight: 400;
-	margin: 16.5vw 1vw 1vw 1vw;
-	text-align: left;
-}
+	article p picture source,
+	article p picture img {
+		width: 100% !important;
+		height: auto;
+	}
 
 footer {
-	margin-bottom: 1vw;
+	margin-bottom: 4vw;
 }
 
-footer iframe {
-	height: 15vw;
-	max-width: 100%;
-}
+	footer h6 {
+		font-weight: 400;
+		font-size: 82%;
+		margin-top: 1vw;
+		text-align: center;
+	}	
 
-footer nav {
-	align-items: flex-start;
-	display: flex;
-	flex-flow: wrap;
-	gap: .5vw;
-	justify-content: flex-start;
-}
+	footer nav {
+		align-items: flex-start;
+		display: flex;
+		flex-flow: wrap;
+		gap: 2vw;
+		justify-content: flex-start;
+		margin: 2vw 0 0 0;
+	}
 
-footer nav li {
-	width: 29.6vw;
-}
+	footer nav li {
+		margin: 2vw 0;
+		width: 28.6vw;
+	}
 
-footer h6 {
-	font-weight: 400;
-	font-size: 82%;
-	margin-top: 1vw;
-	text-align: center;
-}
+	footer nav li h3 {
+		margin: -2vw 0 2vw 0;
+		padding: 2vw;
+	}
 
-footer form input,
-footer form textarea {
-	width: 100%;
-}
+	footer nav li iframe {
+		height: 15vw;
+		max-width: 100%;
+	}
 
-footer form input {
-	border: 1px solid #87C2DC;
-	font-size: 100%;
-	line-height: 2vw;
-	margin-bottom: 0.5vw;
-}
+	footer nav li form input,
+	footer form textarea {
+		padding: .5vw;
+		width: 100%;
+	}
 
-footer form textarea {
-	border: 1px solid #87C2DC;
-	font-size: 100%;
-	height: 6vw;
-	margin-bottom: 0.5vw;
-	resize: none;
-}
+	footer nav li form input {
+		border: 1px solid #87C2DC;
+		font-size: 100%;
+		line-height: 2vw;
+		margin-bottom: 0.5vw;
+	}
 
-footer form button {
-	background-color: #87C2DC;
-	padding: 1vw;
-}
+	footer nav li form textarea {
+		border: 1px solid #87C2DC;
+		font-size: 100%;
+		height: 7.8vw;
+		margin-bottom: 1vw;
+		resize: none;
+	}
+
+	footer nav li form button {
+		background-color: #87C2DC;
+		padding: 1vw;
+	}
