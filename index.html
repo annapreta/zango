@@ -32,22 +32,46 @@
 			<li><a href="projects.html">Projects</a></li>
 			<li><a href="events.html">Events</a></li>
 			<li><a href="media.html">Media</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li><a href="#nav-footer">Contact</a></li>
 		</nav>
 		<nav id="nav-functions">
 			
 		</nav>
 		<div>
-			<section>
-				<img src="./img/matchume.jpg" alt="Matchume Zango">
-				<h2>Matchume Zango</h2>
-				<h3>Influenced by Chopi Music, New Single is out now!</h3>
-				<a href="artist-page.html">More about</a>
-				<nav>
-					<li>
-						<a href="">&lt;</a><a href="">&gt;</a>
-					</li>
-				</nav>
+			<section id="banner-home">
+				<div>
+					<img src="./img/matchume.jpg" alt="Matchume Zango">
+					<h2>Matchume Zango</h2>
+					<h3>Influenced by Chopi Music, New Single is out now!</h3>
+					<a class="banner-link" href="artist-page.html">More about</a>
+					<nav>
+						<li>
+							<a href="">&lt;</a><a href="">&gt;</a>
+						</li>
+					</nav>
+				</div>
+				<div>
+					<img src="./img/matchume.jpg" alt="Matchume Zango">
+					<h2>Matchume Zango 2</h2>
+					<h3>Influenced by Chopi Music, New Single is out now!</h3>
+					<a href="artist-page.html">More about</a>
+					<nav>
+						<li>
+							<a href="">&lt;</a><a href="">&gt;</a>
+						</li>
+					</nav>
+				</div>
+				<div>
+					<img src="./img/matchume.jpg" alt="Matchume Zango">
+					<h2>Matchume Zango 3</h2>
+					<h3>Influenced by Chopi Music, New Single is out now!</h3>
+					<a href="artist-page.html">More about</a>
+					<nav>
+						<li>
+							<a href="">&lt;</a><a href="">&gt;</a>
+						</li>
+					</nav>
+				</div>
 			</section>
 			<section id="spotify-player">
 				<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6gyhowXJxNKCGe1DQZSzdn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -199,16 +223,24 @@
 			</li>
 			<li>
 				<h3>Contact</h3>
-				<form action="#">
-					<input type="text" id="form-name" placeholder="Name" required>
+				<form action="#" id="contact-form">
+					<p class="error-message">
+
+					</p>
+					<input type="text" id="form-name" placeholder="Full Name" required>
+					<input type="email" id="form-email" placeholder="E-mail">
 					<input type="text" id="form-subject" placeholder="Subject" required>
 					<textarea id="form-message" placeholder="Message"></textarea>
-					<button type="submit">Submit</button>
+					<button type="submit" id="form-button">Submit</button>
 				</form>
+				<p class="success-message">
+					
+				</p>
 			</li>
 		</nav>
 		<h6>Copyright &copy;2023 Nzango Artist Residency. All Rights Reserved.<br>
 			Developed by <a href="www.seclick.com.br" target="_blank">SeClick</a></h6>
 	</footer>
+	<script src="./main.js"></script>
 </body>
 </html>

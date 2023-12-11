@@ -4,28 +4,24 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About Nzango Artist Residency</title>
+	<title>Nzango Artist Residency</title>
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 	<header>
 		<nav id="nav-nzango">
 			<li>
-				<h2>
-					<a href="project-page.html">ONE COUNTRY PROJECT</a>
-				</h2>
+				<a href="project-page.html">ONE COUNTRY PROJECT</a>
 			</li>
 			<li>
 				<h1>
 					<a href="index.html">
-						<img src="./img/nzango-artist-residency-logotype.jpg" alt="Nzango Artist Residency">
+						<img src="./img/nzango-artist-residency-logotype.jpg" alt="Nzango Artist Residency Logotype">
 					</a>
 				</h1>
 			</li>
 			<li>
-				<h2>
-					<a href="music.html">MUSIC</a>
-				</h2>
+				<a href="music.html">MUSIC</a>
 			</li>
 		</nav>
 		<nav id="nav-menu">
@@ -44,15 +40,15 @@
 		<div>
 			<section class="inner-page-banner">
 				<img src="./img/nzango-about-us-cover.jpg" alt="About Nzango Artist Residency">
-				<h2>Projects</h2>
-				<h3>Know more about our projects</h3>
+				<h2>Media</h2>
+				<h3>Our latest music, videos and images</h3>
 			</section>
 		</div>
 	</header>
-	<main>
-		<article class="gallery" id="projects">
-			<h3>Projects</h3>
-			<nav id="nav-projects">
+	<main class="home">
+		<article class="gallery" id="music">
+			<h3>Music</h3>
+			<nav id="nav-music">
 				<li>
 					<a href="project-page.html" style="background-image: url(./img/Galeria-Porto-1-e1685567045335.jpg);">
 						<h4>Vasikate</h4>
@@ -80,9 +76,74 @@
 			</nav>
 			<!-- <a href="#">All Projects</a> -->
 		</article>
+		<article class="gallery" id="videos">
+			<h3>Videos</h3>
+			<nav id="nav-videos">
+				<li>
+					<a href="event-page.html" style="background-image: url(./img/wwwww-e1686036174620.jpeg);">
+						<h4>Elements of contemporary creation in dance, music and cultural management</h4>
+						<h5>Performing and Visual Arts</h5>
+					</a>
+				</li>
+			</nav>
+			<!-- <a href="#">All Events</a> -->
+		</article>
+		<article class="gallery" id="galleries">
+			<h3>Galleries</h3>
+			<nav id="nav-galleries">
+				<li>
+					<a href="team-members-page.html" style="background-image: url(./img/LAIS.jpeg);">
+						<h4>Lais Volpe</h4>
+						<h5>Environmental Educator, Art and Cultural Producer</h5>
+					</a>
+				</li>
+				<li>
+					<a href="team-members-page.html" style="background-image: url(./img/matchume-IMG-20230523-WA0000.jpg);">
+						<h4>Matchume Zango</h4>
+						<h5>Musician and Composer</h5>
+					</a>
+				</li>
+				<li>
+					<a href="team-members-page.html" style="background-image: url(./img/akiyo-IMG-20230522-WA0000-1024x768.jpg);">
+						<h4>Akiyo Aminaka</h4>
+						<h5>Concept Researcher/Consultant</h5>
+					</a>
+				</li>
+				<li>
+					<a href="team-members-page.html" style="background-image: url(./img/rio-IMG-20230521-WA0078.jpg);">
+						<h4>Rio Bantu</h4>
+						<h5>Concept Researcher/Consultant</h5>
+					</a>
+				</li>
+				<li>
+					<a href="team-members-page.html" style="background-image: url(./img/indi-903c7819-8ea0-4f23-b822-b8bfc08f0770-e1684761342259.jpg);">
+						<h4>Indi Gregorio</h4>
+						<h5>Graphic Designer</h5>
+					</a>
+				</li>
+				<li>
+					<a href="team-members-page.html" style="background-image: url(./img/isaias.png);">
+						<h4>Isaias Uamba</h4>
+						<h5>Videomaker</h5>
+					</a>
+				</li>
+				<li>
+					<a href="team-members-page.html" style="background-image: url(./img/chimene.jpg);">
+						<h4>Chimene Costa</h4>
+						<h5>Artistic Director, Dancer, Actress, Cultural Manager</h5>
+					</a>
+				</li>
+				<li>
+					<a href="team-members-page.html" style="background-image: url(./img/anna-preta.png);">
+						<h4>Anna Prêta</h4>
+						<h5>Full Stack Developer, Software Project Manager, Communicologist</h5>
+					</a>
+				</li>
+			</nav>
+		</article>
 	</main>
 	<footer>
-		<nav>
+		<nav id="nav-footer">
 			<li>
 				<h3>About Us</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea, deserunt repellat voluptatem eius suscipit cumque omnis voluptatibus ducimus itaque culpa dolore, nobis maiores. Quasi cum rem voluptatibus odit ducimus.</p>
@@ -94,16 +155,24 @@
 			</li>
 			<li>
 				<h3>Contact</h3>
-				<form action="#">
-					<input type="text" id="form-name" placeholder="Name" required>
+				<form action="#" id="contact-form">
+					<p class="error-message">
+
+					</p>
+					<input type="text" id="form-name" placeholder="Full Name" required>
+					<input type="email" id="form-email" placeholder="E-mail">
 					<input type="text" id="form-subject" placeholder="Subject" required>
 					<textarea id="form-message" placeholder="Message"></textarea>
-					<button type="submit">Submit</button>
+					<button type="submit" id="form-button">Submit</button>
 				</form>
+				<p class="success-message">
+					
+				</p>
 			</li>
 		</nav>
 		<h6>Copyright &copy;2023 Nzango Artist Residency. All Rights Reserved.<br>
-		Developed by <a href="www.seclick.com.br" target="_blank">SeClick</a></h6>
+			Developed by <a href="www.seclick.com.br" target="_blank">SeClick</a></h6>
 	</footer>
+	<script src="./main.js"></script>
 </body>
 </html>

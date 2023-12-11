@@ -53,7 +53,11 @@ li {
 /**************************
 ********** HEADER *********
 **************************/
+
+header{
 	
+}
+
 	/*****************************
 	******** nzango menu *********
 	******************************/
@@ -189,14 +193,14 @@ li {
 	header div section h2 {
 		font-size: 288%;
 		margin-top: 1vw;
-		max-width: 50%;
+		max-width: 80%;
 	}
 
 	/* banner section subtitle */
 	header div section h3 {
 		font-size: 144%;
 		margin-top: 8vw;
-		max-width: 50%;
+		max-width: 80%;
 	}
 
 	/* banner section image */
@@ -441,3 +445,21 @@ footer {
 		background-color: #87C2DC;
 		padding: 1vw;
 	}
+
+.success-message {
+	background-color: #87C2DC;
+	background-blend-mode: lighten;
+	color: #000;
+	display: none;
+	margin: .5vw 0;
+	padding: .5vw;
+}
+
+.error-message {
+	background-color:#CE5A35;
+	background-blend-mode: lighten;
+	color: #fff;
+	display: none;
+	margin: .5vw 0;
+	padding: .5vw;
+}
