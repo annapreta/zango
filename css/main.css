@@ -186,22 +186,23 @@ header{
 	/* banner section button */
 	header div section a {
 		background-color: #CE5A35;
-		font-size: 100%;
+		font-size: 80%;
 		margin-top: 15vw;
 	}
 	
 	/* banner section title */
 	header div section h2 {
-		font-size: 288%;
+		font-size: 144%;
 		margin-top: 1vw;
-		max-width: 80%;
+		width: 50%;
 	}
 
 	/* banner section subtitle */
 	header div section h3 {
-		font-size: 144%;
-		margin-top: 8vw;
-		max-width: 80%;
+		font-size: 100%;
+		font-weight: 500;
+		margin-top: 6vw;
+		width: 50%;
 	}
 
 	/* banner section image */
@@ -492,6 +493,19 @@ footer {
 	footer nav li form button {
 		background-color: #87C2DC;
 		padding: 1vw;
+	}
+
+	footer nav li p {
+		height: 3vw;
+	}
+
+	footer nav li p a {
+		
+	}
+	
+	footer nav li p a img {
+		height: 100%;
+		width: auto;
 	}
 
 .success-message {
