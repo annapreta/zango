@@ -68,19 +68,21 @@ header{
 	}	
 
 	header nav#nav-nzango li a:link {
-		font-size: 120%;
-		font-weight: 900;
+		font-size: 160%;
+		font-weight: 500;
+		font-style: italic;
+		text-transform:none;
 		height: 6vw;
 		line-height: 6vw;
 	}
 
 	header nav#nav-nzango li:nth-child(1) a:link {
 		background-color: #87C2DC;
-		color: #000;
+		color: #fff;
 	}
 
-	header nav#nav-nzango li:nth-child(3) a:link {
-		background-color: #CE5A35;
+	header nav#nav-nzango li:nth-child(2) a:link {
+		background-color: #87C2DC;
 		color: #fff;
 	}
 
@@ -96,13 +98,12 @@ header{
 
 	}
 
-	header nav#nav-nzango li:nth-child(1) a,
-	header nav#nav-nzango li:nth-child(3) a {
-		width: 35.8vw;
+	header nav#nav-nzango li:nth-child(1) a {
+		width: 18vw;
 	}
 		
 	header nav#nav-nzango li:nth-child(2) a {
-		width: 18vw;
+		width: 71.6vw;
 	}
 
 	/*****************************
