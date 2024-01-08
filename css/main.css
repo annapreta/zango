@@ -9,8 +9,9 @@ font-family: 'Roboto Condensed', sans-serif;
 AZUL NZANGO: rgb(135, 194, 220) | #87C2DC;
 VERMELHO NZANGO:  rgb(206, 90, 53) | #CE5A35;
 
-= Measures =
-Standard Font Size =  1.2vw
+= Standard Measures =
+Font Size =  1.2vw
+Gap = 
 <h1> = Logotype
 <h2> = 
 <h3> = 
@@ -42,8 +43,7 @@ a {
 }
 
 body {
-	margin: 0 auto;
-	width: 90vw;
+	
 }
 
 li {
@@ -54,8 +54,15 @@ li {
 ********** HEADER *********
 **************************/
 
+header,
+main,
+footer{
+	margin: 0 auto;
+	width: 96vw;
+}
+
 header{
-	
+	margin-top: 2vw;
 }
 
 	/*****************************
@@ -68,22 +75,12 @@ header{
 	}	
 
 	header nav#nav-nzango li a:link {
-		font-size: 160%;
-		font-weight: 500;
-		font-style: italic;
+		background-color: #87C2DC;
+		font-size: 150%;
+		font-weight: 300;
 		text-transform:none;
-		height: 6vw;
-		line-height: 6vw;
-	}
-
-	header nav#nav-nzango li:nth-child(1) a:link {
-		background-color: #87C2DC;
-		color: #fff;
-	}
-
-	header nav#nav-nzango li:nth-child(2) a:link {
-		background-color: #87C2DC;
-		color: #fff;
+		height: 8vw;
+		line-height: 8vw;
 	}
 
 	header nav#nav-nzango li a:visited {
@@ -99,11 +96,11 @@ header{
 	}
 
 	header nav#nav-nzango li:nth-child(1) a {
-		width: 18vw;
+		width: 24vw;
 	}
 		
 	header nav#nav-nzango li:nth-child(2) a {
-		width: 71.6vw;
+		width: 70vw;
 	}
 
 	/*****************************
@@ -113,6 +110,7 @@ header{
 		width: 11.25vw;
 		height: 4vw;
 		line-height: 4vw;
+		margin: 2vw 0;
 	}
 
 	header nav#nav-menu li a:link {
@@ -124,11 +122,13 @@ header{
 	}
 
 	header nav#nav-menu li a:hover {
-		color: #CE5A35;
+		background-color: #CE5A35;
+		color: #fff;
 	}
 
 	header nav#nav-menu li a:active {
-		color: #CE5A35;
+		background-color: #CE5A35;
+		color: #fff;
 	}
 
 	/*****************************
