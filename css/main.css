@@ -11,7 +11,7 @@ VERMELHO NZANGO:  rgb(206, 90, 53) | #CE5A35;
 
 = Standard Measures =
 Font Size =  1.2vw
-Gap = 
+Gap = 2vw
 <h1> = Logotype
 <h2> = 
 <h3> = 
@@ -26,12 +26,26 @@ Gap =
 /**************************
 ***** CSS RESET *****
 **************************/
+:root{
+	--one-column: 17.6vw;
+	--two-columns: 37.2vw;
+	--three-columns: 56.8vw;
+	--four-columns: 76.4vw;
+	--five-columns: 96vw;
+	--font-size: 1.2vw;
+	--quarter-gap: 0.5vw;
+	--half-gap: 1vw;
+	--gap: 2vw;
+	--double-gap: 4vw;
+	--huge-gap: 8vw
+}
+
 * {
 	border: none;
 	box-sizing: border-box;
 	color: #000;
 	font-family: 'Trebuchet MS', sans-serif;
-	font-size: 1.2vw;
+	font-size: var(--font-size);
 	margin: 0;
 	padding: 0;
 }
@@ -58,11 +72,7 @@ header,
 main,
 footer{
 	margin: 0 auto;
-	width: 96vw;
-}
-
-header{
-	margin-top: 2vw;
+	width: var(--five-columns);
 }
 
 	/*****************************
@@ -72,15 +82,15 @@ header{
 	header nav#nav-menu li a {
 		align-items: center;
 		display: block;
+		margin-top: var(--gap);
 	}	
 
 	header nav#nav-nzango li a:link {
-		background-color: #87C2DC;
 		font-size: 150%;
 		font-weight: 300;
 		text-transform:none;
-		height: 8vw;
-		line-height: 8vw;
+		height: var(--huge-gap);
+		line-height: var(--huge-gap);
 	}
 
 	header nav#nav-nzango li a:visited {
@@ -96,11 +106,13 @@ header{
 	}
 
 	header nav#nav-nzango li:nth-child(1) a {
-		width: 24vw;
+		text-align: left;
+		width: var(--two-columns);
 	}
 		
 	header nav#nav-nzango li:nth-child(2) a {
-		width: 70vw;
+		background-color: #87C2DC;
+		width: var(--three-columns);
 	}
 
 	/*****************************
@@ -122,13 +134,13 @@ header{
 	}
 
 	header nav#nav-menu li a:hover {
-		background-color: #CE5A35;
-		color: #fff;
+		background-color: #000;
+		color: #87C2DC;
 	}
 
 	header nav#nav-menu li a:active {
-		background-color: #CE5A35;
-		color: #fff;
+		background-color: #000;
+		color: #87C2DC;
 	}
 
 	/*****************************
@@ -138,6 +150,7 @@ header{
 	/* banner and player container div */
 	header div {
 		display: flex;
+		height: 24.5vw;
 	}
 	
 	/* banner section */
@@ -145,14 +158,14 @@ header{
 		height: 24.5vw;
 		overflow: hidden;
 		position: relative;
-		width: 70%;
+		width: 56.8vw;
 	}
 
 	/* player section */
 	header div section#spotify-player {	
 		background-color: rgb(111,122,122);
-		margin-left: 2vw;
-		width: 30%;
+		margin-left: var(--gap);
+		width: 37.2vw;
 	}
 
 	/* inner pages banner section */
@@ -207,8 +220,8 @@ header{
 
 	/* banner section image */
 	header div section img {
-		height: auto;
-		width: 100%;
+		height: 100%;
+		width: auto;
 		max-width: 100%;
 	}
 
@@ -263,7 +276,7 @@ nav {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-between;
-	gap: 2vw 0;
+	gap: var(--gap) 0;
 }
 
 	nav li a {
@@ -273,16 +286,16 @@ nav {
 	}
 
 	nav li a img {
-		max-width: 100%;
+		max-height: 100%;
 	}
 
 article {
-	margin: 4vw 0;
+	margin: var(--gap) 0 var(--double-gap) 0;
 }
 
 	article.content {
 		background-color:rgba(135, 194, 220, .2);
-		padding: 2vw;
+		padding: var(--gap);
 	}
 
 	article.gallery {
@@ -339,13 +352,10 @@ article.gallery figcaption h5 {
 	article h3,
 	footer h3 {
 		background-color: rgba(0, 0, 0, .9);
-		color:#fff;
+		color:#87C2DC;
 		margin: 0;
 		padding: 2vw 27.33vw 2vw 2vw;
 		width: 100%;
-	}
-
-	article h3 {
 	}
 
 	article.gallery h3 {
@@ -356,9 +366,9 @@ article.gallery figcaption h5 {
 		align-items: flex-start;
 		display: flex;
 		flex-flow: wrap;
-		gap: 2vw;
+		gap: var(--gap);
 		justify-content: space-between;
-		margin: 2vw 0 0 0;
+		margin: var(--gap) 0 0 0;
 	}
 
 	article nav li a {
@@ -370,11 +380,11 @@ article.gallery figcaption h5 {
 		height: 28.6vw;
 		overflow: hidden;
 		position: relative;
-		width: 28.6vw;
+		width: var(--one-column);
 	}
 
 	article#what-we-do nav li a {
-		width: 16.4vw;
+		width: var(--one-column);
 	}
 
 	article#the-team-behind {
@@ -385,10 +395,7 @@ article.gallery figcaption h5 {
 		filter: grayscale(100%);
 	}
 
-	main.home article nav li a {
-		height: 21vw;
-		width: 21vw;
-	}
+	
 	
 	article nav li a h4,
 	article nav li a h5,
