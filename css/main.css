@@ -37,7 +37,9 @@ Gap = 2vw
 	--half-gap: 1vw;
 	--gap: 2vw;
 	--double-gap: 4vw;
-	--huge-gap: 8vw
+	--huge-gap: 8vw;
+	--nzango-blue: #87C2DC;
+	--nzango-red: #CE5A35;
 }
 
 * {
@@ -111,7 +113,7 @@ footer{
 	}
 		
 	header nav#nav-nzango li:nth-child(2) a {
-		background-color: #87C2DC;
+		background-color: var(--nzango-blue);
 		width: var(--three-columns);
 	}
 
@@ -135,12 +137,12 @@ footer{
 
 	header nav#nav-menu li a:hover {
 		background-color: #000;
-		color: #87C2DC;
+		color: var(--nzango-blue);
 	}
 
 	header nav#nav-menu li a:active {
 		background-color: #000;
-		color: #87C2DC;
+		color: var(--nzango-blue);
 	}
 
 	/*****************************
@@ -151,6 +153,7 @@ footer{
 	header div {
 		display: flex;
 		height: 24.5vw;
+		margin-bottom: var(--double-gap);
 	}
 	
 	/* banner section */
@@ -198,7 +201,7 @@ footer{
 
 	/* banner section button */
 	header div section a {
-		background-color: #CE5A35;
+		background-color: var(--nzango-red);
 		font-size: 80%;
 		margin-top: 15vw;
 	}
@@ -244,7 +247,7 @@ footer{
 		font-size: 2vw;
 		font-weight: 900;
 		line-height: 2vw;
-		background-color: #87C2DC;
+		background-color: var(--nzango-blue);
 		color: #fff;
 		display: block;
 		height: 4vw;
@@ -352,7 +355,7 @@ article.gallery figcaption h5 {
 	article h3,
 	footer h3 {
 		background-color: rgba(0, 0, 0, .9);
-		color:#87C2DC;
+		color: var(--nzango-blue);
 		margin: 0;
 		padding: 2vw 27.33vw 2vw 2vw;
 		width: 100%;
@@ -456,19 +459,23 @@ footer {
 		align-items: flex-start;
 		display: flex;
 		flex-flow: wrap;
-		gap: 2vw;
+		gap: var(--gap);
 		justify-content: flex-start;
-		margin: 2vw 0 0 0;
+		margin: var(--gap) 0 0 0;
 	}
 
 	footer nav li {
-		margin: 2vw 0;
-		width: 28.6vw;
+		margin: 0 0 var(--gap) 0;
+		width: var(--two-columns);
+	}
+
+	footer nav li:first-child{
+		width: var(--one-column);
 	}
 
 	footer nav li h3 {
-		margin: -2vw 0 2vw 0;
-		padding: 2vw;
+		margin: 0 0 var(--gap) 0;
+		padding: var(--gap);
 	}
 
 	footer nav li iframe {
@@ -483,14 +490,14 @@ footer {
 	}
 
 	footer nav li form input {
-		border: 1px solid #87C2DC;
+		border: 1px solid var(--nzango-blue);
 		font-size: 100%;
 		line-height: 2vw;
 		margin-bottom: 0.5vw;
 	}
 
 	footer nav li form textarea {
-		border: 1px solid #87C2DC;
+		border: 1px solid var(--nzango-blue);
 		font-size: 100%;
 		height: 7.8vw;
 		margin-bottom: 1vw;
@@ -498,7 +505,7 @@ footer {
 	}
 
 	footer nav li form button {
-		background-color: #87C2DC;
+		background-color: var(--nzango-blue);
 		padding: 1vw;
 	}
 
@@ -516,7 +523,7 @@ footer {
 	}
 
 .success-message {
-	background-color: #87C2DC;
+	background-color: var(--nzango-blue);
 	background-blend-mode: lighten;
 	color: #000;
 	display: none;
@@ -525,7 +532,7 @@ footer {
 }
 
 .error-message {
-	background-color:#CE5A35;
+	background-color:var(--nzango-red);
 	background-blend-mode: lighten;
 	color: #fff;
 	display: none;
