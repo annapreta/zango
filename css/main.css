@@ -342,11 +342,7 @@ article.gallery figcaption h5 {
 		background-color: #000;
 		color: var(--nzango-blue);
 		margin: 0;
-		padding: 2vw 27.33vw 2vw 2vw;
-	}
-
-	article h3 {
-		width: var(--five-columns-sized);
+		padding: var(--gap);
 	}
 
 	article h3.page-button {
@@ -434,8 +430,8 @@ article.gallery figcaption h5 {
 
 	article p {
 		column-count: 3;
-		column-gap: 4vw;
-		margin-top: 2vw;
+		column-gap: var(--gap);
+		margin-top: var(--gap);
 		text-align: justify;
 		hyphens: auto;
 	}
