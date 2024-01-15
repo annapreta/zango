@@ -133,12 +133,12 @@ footer{
 
 #nav-menu li a:hover {
 	background-color: #000;
-	color: var(--nzango-blue);
+	color: #fff;
 }
 
 #nav-menu li a:active {
 	background-color: #000;
-	color: var(--nzango-blue);
+	color: #fff;
 }
 
 /*****************************
@@ -191,8 +191,8 @@ header div section a,
 header div section h2,
 header div section h3,
 header div section nav {
-	background-color: rgba(0, 0, 0, .6);
-	color: #fff;
+	background-color: rgba(255, 255, 255, .9);
+	color: #000;
 	padding: 1vw;
 	margin: 1vw;
 }
@@ -215,7 +215,9 @@ header div section h2 {
 header div section h3 {
 	font-size: 100%;
 	font-weight: 500;
+	max-height: 12vw;
 	margin-top: 6vw;
+	overflow: hidden;
 	width: 50%;
 }
 
@@ -236,11 +238,11 @@ header div section nav {
 
 /* banner section navigation buttons */
 header div section nav li a {
-	font-size: 2vw;
+	font-size: 2.4vw;
 	font-weight: 900;
 	line-height: 2vw;
-	background-color: var(--nzango-blue);
-	color: #000;
+	background-color: rgba(255, 255, 255, 0.9);
+	color:var(--nzango-red);
 	display: inline-block;
 	height: 4vw;
 	margin: 0 0 0 0;
@@ -253,11 +255,10 @@ header div section#banner-home nav li a#banner-nav-left {
 }
 
 header div section#banner-home nav li a#banner-nav-button {
-	background-color: var(--nzango-red);
-	color: #fff;
-	font-size: 1vw;
+	font-size: 1.2vw;
 	line-height: 1.2vw;
 	margin-left: 5vw;
+	text-transform: none;
 	width: 8vw;
 }
 
@@ -268,7 +269,9 @@ header div section#banner-home nav li a#banner-nav-right {
 
 
 /***********/
-
+h2{
+	text-transform: uppercase;
+}
 
 
 h3 {
@@ -277,6 +280,7 @@ h3 {
 	font-size: 144%;
 	margin: 3vw 0 1vw 0;
 	text-align: left;
+	text-transform: uppercase;
 }
 
 nav {
@@ -391,8 +395,9 @@ article.gallery figcaption h5 {
 		width: var(--one-column);
 	}
 
-	article#what-we-do nav li a {
-		width: var(--one-column);
+	article nav li.link-thumb a h5 {
+		font-size: 122%;
+		margin-top: 14vw;
 	}
 
 	article#the-team-behind {
