@@ -53,17 +53,27 @@ footer{
 /*****************************
 ******** nzango menu *********
 ******************************/
+#nav-nzango,
+#nav-menu {
+	display: flex;
+	gap: var(--gap);
+	justify-content: space-between;
+	width: var(--five-columns-sized);
+}
+
+#nav-menu {
+	margin: var(--gap) 0;
+}
+
 #nav-nzango li a,
 #nav-menu li a {
-	align-items: center;
 	display: block;
-	margin-top: var(--gap);
 }	
 
 #nav-nzango li a:link {
 	font-size: 150%;
 	font-weight: 300;
-	text-transform:none;
+	text-transform: none;
 	height: var(--huge-gap);
 	line-height: var(--huge-gap);
 }
@@ -94,15 +104,16 @@ footer{
 /*****************************
 ********* pages menu *********
 ******************************/
-#nav-menu li a {
-	width: 11.25vw;
-	height: 4vw;
-	line-height: 4vw;
-	margin: 2vw 0;
+#nav-menu li {
+	display: block;
+	height: var(--double-gap);
+	line-height: var(--double-gap);
 }
 
 #nav-menu li a:link {
-	background-color: none;
+	font-size: var(--font-size);
+	
+	padding: 0 var(--gap);
 }
 
 #nav-menu li a:visited {
