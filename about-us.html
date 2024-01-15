@@ -69,15 +69,9 @@
 			
 			<!-- <a href="#">All Projects</a> -->
 		</article>
-		<article id="the-team-behind" class="inner-page gallery">
+		<article class="inner-page gallery" id="the-team-behind">
 			<h3>Meet The Team Behind</h3>
 			<nav id="nav-team">
-				<li>
-					<a href="team-members-page.html" style="background-image: url(./img/LAIS.jpeg);">
-						<h4>Lais Volpe</h4>
-						<h5>Environmental Educator, Art and Cultural Producer</h5>
-					</a>
-				</li>
 				<li>
 					<a href="team-members-page.html" style="background-image: url(./img/matchume-IMG-20230523-WA0000.jpg);">
 						<h4>Matchume Zango</h4>
@@ -85,33 +79,21 @@
 					</a>
 				</li>
 				<li>
-					<a href="team-members-page.html" style="background-image: url(./img/akiyo-IMG-20230522-WA0000-1024x768.jpg);">
-						<h4>Akiyo Aminaka</h4>
-						<h5>Concept Researcher/Consultant</h5>
-					</a>
-				</li>
-				<!-- <li>
-					<a href="team-members-page.html" style="background-image: url(./img/rio-IMG-20230521-WA0078.jpg);">
-						<h4>Rio Bantu</h4>
-						<h5>Concept Researcher/Consultant</h5>
+					<a href="team-members-page.html" style="background-image: url(./img/LAIS.jpeg);">
+						<h4>Lais Volpe</h4>
+						<h5>Environmental Educator, Art and Cultural Producer</h5>
 					</a>
 				</li>
 				<li>
-					<a href="team-members-page.html" style="background-image: url(./img/indi-903c7819-8ea0-4f23-b822-b8bfc08f0770-e1684761342259.jpg);">
-						<h4>Indi Gregorio</h4>
-						<h5>Graphic Designer</h5>
+					<a href="team-members-page.html" style="background-image: url();">
+						<h4>Bela Zango</h4>
+						<h5>Role Title</h5>
 					</a>
-				</li> -->
+				</li>
 				<li>
 					<a href="team-members-page.html" style="background-image: url(./img/isaias.png);">
 						<h4>Isaias Uamba</h4>
 						<h5>Videomaker</h5>
-					</a>
-				</li>
-				<li>
-					<a href="team-members-page.html" style="background-image: url(./img/chimene.jpg);">
-						<h4>Chimene Costa</h4>
-						<h5>Artistic Director, Dancer, Actress, Cultural Manager</h5>
 					</a>
 				</li>
 				<li>
@@ -124,11 +106,13 @@
 		</article>
 	</main>
 	<footer>
-		<nav>
+		<nav id="nav-footer">
 			<li>
-				<h3>About Us</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea, deserunt repellat voluptatem eius suscipit cumque omnis voluptatibus ducimus itaque culpa dolore, nobis maiores. Quasi cum rem voluptatibus odit ducimus.</p>
-				<a href="about-us.html">More About Us</a>
+				<h3>Follow Us</h3>
+				<p>
+					<a href="https://www.instagram.com/nzangoartistresidency/" target="_blank"><img src="./img/Instagram_Glyph_Gradient.svg" alt=""></a>
+					
+				</p>
 			</li>
 			<li>
 				<h3>Location</h3>
@@ -136,16 +120,22 @@
 			</li>
 			<li>
 				<h3>Contact</h3>
-				<form action="#">
-					<input type="text" id="form-name" placeholder="Name" required>
+				<form action="#" id="contact-form">
+					<p class="error-message">
+
+					</p>
+					<input type="text" id="form-name" placeholder="Full Name" required>
+					<input type="email" id="form-email" placeholder="E-mail">
 					<input type="text" id="form-subject" placeholder="Subject" required>
 					<textarea id="form-message" placeholder="Message"></textarea>
-					<button type="submit">Submit</button>
+					<button type="submit" id="form-button">Submit</button>
 				</form>
+				<p class="message-to-user"></p>
 			</li>
 		</nav>
 		<h6>Copyright &copy;2023 Nzango Artist Residency. All Rights Reserved.<br>
-		Developed by <a href="www.seclick.com.br" target="_blank">SeClick</a></h6>
+			Developed by <a href="www.seclick.com.br" target="_blank">SeClick</a></h6>
 	</footer>
+	<script src="./main.js"></script>
 </body>
 </html>

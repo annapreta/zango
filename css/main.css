@@ -109,7 +109,8 @@ footer{
 }
 	
 #nav-nzango li:nth-child(2) a {
-	background-color: var(--nzango-blue);
+	background-color: var(--nzango-red);
+	color: #fff;
 	width: var(--three-columns);
 }
 
@@ -364,7 +365,7 @@ article.gallery figcaption h5 {
 	article h3,
 	footer h3 {
 		background-color: rgba(0, 0, 0, .9);
-		color: var(--nzango-blue);
+		color: #fff;
 		margin: 0;
 		padding: 2vw 27.33vw 2vw 2vw;
 		width: 100%;
@@ -395,6 +396,10 @@ article.gallery figcaption h5 {
 		width: var(--one-column);
 	}
 
+	article nav li.link-thumb a{
+		background-color: var(--nzango-blue);
+	}
+	
 	article nav li.link-thumb a h5 {
 		font-size: 122%;
 		margin-top: 14vw;
