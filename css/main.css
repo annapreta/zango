@@ -385,7 +385,7 @@ article.gallery figcaption h5 {
 	}
 
 	article nav li a {
-		background-color:#CE5A35;
+		background-color:var(--nzango-blue);
 		background-size: cover;
 		background-position:top;
 		background-repeat: no-repeat;
@@ -413,7 +413,10 @@ article.gallery figcaption h5 {
 		filter: grayscale(100%);
 	}
 
-	
+	article#what-we-do nav li a{
+		background-position: center;
+		background-size: 60%;
+	}
 	
 	article nav li a h4,
 	article nav li a h5,
