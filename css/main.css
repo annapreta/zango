@@ -1,42 +1,19 @@
 /**************************
-**** CSS DESIGN RULES ****
-**************************
-= Fonts =
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-
-= Colors = 
-AZUL NZANGO: rgb(135, 194, 220) | #87C2DC;
-VERMELHO NZANGO:  rgb(206, 90, 53) | #CE5A35;
-
-= Standard Measures =
-Font Size =  1.2vw
-Gap = 2vw
-<h1> = Logotype
-<h2> = 
-<h3> = 
-<h4> = 
-<h5> = 
-<h6> = 
-<a> = 
-<p> = 
-
-*/
-
-/**************************
-***** CSS RESET *****
+******** CSS RESET ********
 **************************/
 :root{
-	--one-column: 17.6vw;
-	--two-columns: 37.2vw;
-	--three-columns: 56.8vw;
-	--four-columns: 76.4vw;
-	--five-columns: 96vw;
 	--font-size: 1.2vw;
+	--one-column-sized: 17.6vw;
+	--two-columns-sized: 37.2vw;
+	--three-columns-sized: 56.8vw;
+	--four-columns-sized: 76.4vw;
+	--five-columns-sized: 96vw;
 	--quarter-gap: 0.5vw;
+	--half-quarter-gap: 0.75vw;
 	--half-gap: 1vw;
 	--gap: 2vw;
 	--double-gap: 4vw;
+	--double-huge-gap: 6vw;
 	--huge-gap: 8vw;
 	--nzango-blue: #87C2DC;
 	--nzango-red: #CE5A35;
@@ -70,7 +47,7 @@ header,
 main,
 footer{
 	margin: 0 auto;
-	width: var(--five-columns);
+	width: var(--five-columns-sized);
 }
 
 /*****************************
@@ -105,13 +82,13 @@ footer{
 
 #nav-nzango li:nth-child(1) a {
 	text-align: left;
-	width: var(--two-columns);
+	width: var(--two-columns-sized);
 }
 	
 #nav-nzango li:nth-child(2) a {
 	background-color: var(--nzango-red);
 	color: #fff;
-	width: var(--three-columns);
+	width: var(--three-columns-sized);
 }
 
 /*****************************
@@ -256,9 +233,10 @@ header div section#banner-home nav li a#banner-nav-left {
 }
 
 header div section#banner-home nav li a#banner-nav-button {
-	font-size: 1.2vw;
-	line-height: 1.2vw;
+	font-size: var(--font-size);
+	line-height: var(--font-size);
 	margin-left: 5vw;
+	padding: var(--half-quarter-gap);
 	text-transform: none;
 	width: 8vw;
 }
@@ -303,7 +281,7 @@ nav li a img {
 }
 
 article {
-margin: var(--gap) 0 var(--double-gap) 0;
+	margin: var(--gap) 0 var(--double-gap) 0;
 }
 
 article.content {
@@ -352,7 +330,7 @@ article.gallery figure:hover figcaption {
 }
 
 article.gallery figcaption h4 {
-    font-size: 1.2vw; /* Adjust as needed */
+    font-size: var(--font-size); /* Adjust as needed */
     margin: 0;
 }
 
@@ -368,11 +346,24 @@ article.gallery figcaption h5 {
 		color: #fff;
 		margin: 0;
 		padding: 2vw 27.33vw 2vw 2vw;
-		width: 100%;
 	}
 
-	article.gallery h3 {
-		width: 100%;
+	article h3 {
+		width: var(--five-columns-sized);
+	}
+
+	article h3.page-button {
+		background-color: var(--nzango-red);
+		font-size: var(--font-size);
+		line-height: var(--gap);
+		margin-top: var(--gap);
+		padding: var(--half-gap);
+		text-align: right;
+		width: var(--two-columns-sized);
+	}
+
+	article h3.page-button a {
+		color: #fff;
 	}
 
 	article nav {
@@ -393,7 +384,7 @@ article.gallery figcaption h5 {
 		height: 28.6vw;
 		overflow: hidden;
 		position: relative;
-		width: var(--one-column);
+		width: var(--one-column-sized);
 	}
 
 	article nav li.link-thumb a{
@@ -484,16 +475,17 @@ footer {
 
 	footer nav li {
 		margin: 0 0 var(--gap) 0;
-		width: var(--two-columns);
+		width: var(--two-columns-sized);
 	}
 
 	footer nav li:first-child{
-		width: var(--one-column);
+		width: var(--one-column-sized);
 	}
 
 	footer nav li h3 {
 		margin: 0 0 var(--gap) 0;
 		padding: var(--gap);
+		width: 100%;
 	}
 
 	footer nav li iframe {
