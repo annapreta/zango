@@ -262,8 +262,8 @@ h3 {
 nav {
 align-items: start;
 display: flex;
-flex-flow: wrap;
-justify-content: space-between;
+flex-flow:row;
+justify-content: flex-start;
 gap: var(--gap) 0;
 }
 
@@ -368,7 +368,7 @@ article.gallery figcaption h5 {
 		display: flex;
 		flex-flow: wrap;
 		gap: var(--gap);
-		justify-content: space-between;
+		justify-content: flex-start;
 		margin: var(--gap) 0 0 0;
 	}
 
