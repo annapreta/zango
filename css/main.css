@@ -254,10 +254,7 @@ h2{
 
 
 h3 {
-	background-color: #000;
-	color: #fff;
 	font-size: 144%;
-	margin: 3vw 0 1vw 0;
 	text-align: left;
 	text-transform: uppercase;
 }
@@ -342,8 +339,8 @@ article.gallery figcaption h5 {
 	
 	article h3,
 	footer h3 {
-		background-color: rgba(0, 0, 0, .9);
-		color: #fff;
+		background-color: #000;
+		color: var(--nzango-blue);
 		margin: 0;
 		padding: 2vw 27.33vw 2vw 2vw;
 	}
@@ -396,7 +393,7 @@ article.gallery figcaption h5 {
 		margin-top: 14vw;
 	}
 
-	article#the-team-behind {
+	article#the-team-behind #nav-team {
 		-webkit-filter: grayscale(100%);
 		-moz-filter: grayscale(100%);
 		-o-filter: grayscale(100%);
